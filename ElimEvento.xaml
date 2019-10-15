@@ -1,0 +1,16 @@
+﻿<Window x:Class="appEventos.ElimEvento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:appEventos"
+        mc:Ignorable="d"
+        Title="ElimEvento" Height="250" Width="450">
+    <Grid>
+        <Label x:Name="lbCU" Content="Clave única del evento a eliminar" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="txCu" HorizontalAlignment="Left" Height="23" Margin="165,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontFamily="Century Gothic" FontSize="16"/>
+        <Button x:Name="btElimina" Content="Eliminar" HorizontalAlignment="Left" Margin="37,167,0,0" VerticalAlignment="Top" Width="95" FontFamily="Century Gothic" FontSize="20" Height="35" Click="btElimina_Click" RenderTransformOrigin="0.105,0.743"/>
+        <Button x:Name="btCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="309,173,0,0" VerticalAlignment="Top" Width="106" Background="#FF86CF1C" FontFamily="Century Gothic" FontSize="18" Height="29" Click="BtCancelar_Click"/>
+
+    </Grid>
+</Window>

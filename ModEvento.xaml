@@ -1,0 +1,66 @@
+﻿<Window x:Class="appEventos.ModEvento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:appEventos"
+        mc:Ignorable="d"
+        Title="ModEvento" Height="400" Width="550">
+    <Grid>
+        <Label x:Name="lbCU" Content="Clave única del evento" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="txCu" HorizontalAlignment="Left" Height="23" Margin="337,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139" FontFamily="Century Gothic" FontSize="16"/>
+        <Button x:Name="btModifica" Content="Modificar" HorizontalAlignment="Left" Margin="337,304,0,0" VerticalAlignment="Top" Width="137" FontFamily="Century Gothic" FontSize="20" Height="47" Click="btModifica_Click"/>
+        <Label x:Name="lbHorario" Content="Nuevo horario" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="lbFecha" Content="Nueva Fecha" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="lbLugar" Content="Lugar" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" FontSize="24" FontWeight="Bold"/>
+
+        <TextBox x:Name="txLugar" HorizontalAlignment="Left" Height="23" Margin="337,257,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139" FontFamily="Century Gothic" FontSize="16"/>
+        <Button x:Name="btCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="20,304,0,0" VerticalAlignment="Top" Width="107" FontFamily="Century Gothic" FontSize="18" FontWeight="Bold" Height="34" Background="#FF86CF1C" Click="BtCancelar_Click"/>
+        <DatePicker x:Name="dpFecha" HorizontalAlignment="Left" Margin="337,191,0,0" VerticalAlignment="Top" Width="139" FontFamily="Century Gothic"/>
+        <TextBox x:Name="txMin" HorizontalAlignment="Left" Height="28" Margin="447,114,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="41" FontSize="16" FontFamily="Century Gothic"/>
+        <Button x:Name="btMinMas" Content="&lt;" HorizontalAlignment="Left" Margin="490,112,0,0" VerticalAlignment="Top" Width="14" FontFamily="Century Gothic" RenderTransformOrigin="0.5,0.5" Click="BtMinMas_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="txMinMenos" Content="&gt;" HorizontalAlignment="Left" Margin="490,126,0,0" VerticalAlignment="Top" Width="14" FontFamily="Century Gothic" RenderTransformOrigin="0.5,0.5" Click="TxMinMenos_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txHoras" HorizontalAlignment="Left" Height="28" Margin="332,114,0,0" TextWrapping="Wrap" Text="12" VerticalAlignment="Top" Width="35" FontFamily="Century Gothic" FontSize="16" RenderTransformOrigin="-2.229,0.393"/>
+        <Button x:Name="btHrsMas" Content="&lt;" HorizontalAlignment="Left" Margin="368,112,0,0" VerticalAlignment="Top" Width="14" FontFamily="Century Gothic" RenderTransformOrigin="0.5,0.5" Height="19" Click="BtHrsMas_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="txHrsMin" Content="&gt;" HorizontalAlignment="Left" Margin="368,126,0,0" VerticalAlignment="Top" Width="14" FontFamily="Century Gothic" RenderTransformOrigin="0.5,0.5" Click="TxHrsMin_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="lbHoras" Content="Hora" HorizontalAlignment="Left" Margin="284,117,0,0" VerticalAlignment="Top" FontFamily="Century Gothic"/>
+        <Label x:Name="lbMinutos" Content="Minutos" HorizontalAlignment="Left" Margin="390,117,0,0" VerticalAlignment="Top" FontFamily="Century Gothic"/>
+
+    </Grid>
+</Window>
